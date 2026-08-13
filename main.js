@@ -6,5 +6,12 @@ const botoes = document.querySelectorAll("button);
         function botaoClicado () {
             conslole.log("fui clicado");
             let texto = botao.add
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true
+            } else {
+                texto.textContent--;
+                curtiu = false;
+            }
         }
     })
